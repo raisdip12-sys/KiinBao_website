@@ -47,7 +47,7 @@ This project demonstrates a clean user interface, interactive elements, and a mu
 1. Clone the repository:
 
 ```
-git clone https://github.com/yourusername/restaurant-website.git
+git clone https://github.com/username/KiinBao_website.git
 ```
 
 2. Open `index.html` in your browser.
