@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="menu-bg">
+
+<nav class="navbar">
+    <a href="index.html">
+    <img src="images/logo.png" class="logo">
+</a>
+
+    <div class="nav-links">
+
+       
+
+        <div class="dropdown">
+            <button class="dropbtn">Menu ▾</button>
+            <div class="dropdown-content">
+                <a href="menu.html">À la carte</a>
+                <a href="3course.html">3-course</a>
+                <a href="tasting.html">Tasting</a>
+            </div>
+        </div>
+
+        <a href="#">Events</a>
+
+        <a href="https://kiinkiingifts.dk/kiin/" target="_blank" class="btn-outline">Gift Card</a>
+        <a href="https://book.easytable.com/book/?id=2a075" target="_blank" class="btn">Reservation</a>
+    </div>
+</nav>
+<!-- LANGUAGE TOGGLE -->
+<div class="lang-toggle">
+    <button onclick="setLang('dk')">DK</button>
+    <button onclick="setLang('en')">EN</button>
+</div>
+
+<section class="menu-page">
+
+<!-- DANISH -->
+<div class="menu dk">
+
+<h2>Menu</h2>
+
+<h5>Små retter</h5>
+
+<p>1. Sprød grønkål med basilikummayo og urteolie / 60</p>
+<p>2. Soto-suppe med kylling, kogt æg og glasnudler (L) /70</p>
+<p>3. Østerssvampe med chilimayo (T)/ 70</p>
+<p>4. Japansk krydret tun med sesamolie, kewpie chili mayo og papadumchips (S)/ 105</p>
+<p>5. Friteret kærnemælksreje med yuzu mayo og grillet ananas (S)/ 75</p>
+<p>6. Thai mango salat med krydret vegansk yum dressing / 70</p>
+<p>7. Grillet broccolini med miso ponzu og ristede cashewnødder ( L V N) / 70</p>
+<p>8. Hjemmelavede stegte gyoza med kylling- og kimchi-fyld, sort eddike og laoganma-sauce ( S L ) / 75</p>
+<p>9. Rare-grillet oksekød med soyasmør, løg, forårsløg, stegt hvidløg og togarashi /110</p>
+<h3>Baos</h3>
+
+<p>21. Braiseret svinekød ... / 70</p>
+<p>22. Pulled Beef Brisket bao ... / 70</p>
+<p>23. Stegt kylling ... / 70</p>
+<p>24. Portobellosvampe ... / 70</p>
+<p>25. Crispy softshell krabbe med spicy teriyaki mayo, stegt dild, topped med
+togarashi / 70</p>
+<p>26. Tempura rejer med wasabi mayo og brøndkarse (S)/ 70</p>
+<p>
+27. Sort peber-kyllingebao med syltede agurker, løg og koriander (S) / 70</p>
+<h3>Hovedret</h3>
+
+<p>31. Koreanske Galbi Short Ribs ... / 180</p>
+<p>32. Stir fry udon-nudler ... /160</p>
+<p>33. Kiin Kiin rød karry ... /150</p>
+
+<div class="vegan-note">
+    <h3>Veganske muligheder</h3>
+    <p>Vi serverer også veganske muligheder og laktosefri bao til veganere og vegetarer.</p>
+    <p>Spørg venligst vores personale om veganske muligheder og allergier.</p>
+</div>
+
+</div>
+
+<!-- ENGLISH -->
+<div class="menu en">
+
+<h2>Menu</h2>
+<h5>Starters</h5>
+
+<p>1. Crispy kale with basil mayo and herb oil / 60</p>
+<p>2. Soto soup with chicken, boiled egg and glass noodles (L) /70</p>
+<p>3. Oyster mushrooms with chili mayo (T)/ 70</p>
+<p>4. Japanese spicy tuna with sesame oil ... /105</p>
+<p>5. Fried buttermilk prawn with yuzu mayo /75</p>
+<p>6. Thai Mango Salad with spicy vegan dressing / 70</p>
+<p>7. Charred Brocollini with yum sauce and roasted cashews (V) / 70</p>
+<p>8. Homemade Fried Gyoza Dumplings with Black vinegar and laoganma / 75</p>
+<p>9. Rare Grilled Beef with creamy butter sauce / 110</p>
+<h3>Baos</h3>
+
+<p>21. Braised pork bao ... / 70</p>
+<p>22. Pulled Beef brisket bao ... / 70</p>
+<p>23. Fried chicken bao ... / 70</p>
+<p>24. Portobello panko bao ... / 70</p>
+<p>25. Crispy Soft Shell Crab Bao .../ 75</p>
+<p>26. Japanese Prawn Tempura Bao .../ 70 </p>
+<p>27. Black Pepper Chicke Bao .../ 70</p>
+<h3>Mains</h3>
+
+<p>31. Korean Galbi Short Ribs ... / 180</p>
+<p>32. Stir fry udon ... /160</p>
+<p>33. Kiin Kiin red curry ... /150</p>
+
+<h4> Desserts</h4>
+
+<p>41. Homemade Mungbean Ice Cream with Dried Coconut, Caramel and Oreo Crumbs / 60</p>
+<p>42. Sweet Bao Filled with Peanut Cream and Served with vanilla ice cream / 80 </p>
+
+
+<div class="vegan-note">
+    <h3>Vegan Options</h3>
+    <p>We also serve vegan options and lactose free bao for the vegans and vegetarians.</p>
+    <p>Please ask our staff about vegan options and allergies.</p>
+</div>
+
+</section>
+
+<script>
+function setLang(lang) {
+    document.querySelector('.dk').style.display = lang === 'dk' ? 'block' : 'none';
+    document.querySelector('.en').style.display = lang === 'en' ? 'block' : 'none';
+}
+setLang('en');
+</script>
+
+</body>
+</html>

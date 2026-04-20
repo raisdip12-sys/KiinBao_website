@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kiin Bao Bao</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <img src="images/logo.png" class="logo" alt="Kiin Bao Bao logo">
+
+    <div class="nav-links">
+
+        <div class="dropdown">
+            <button class="dropbtn" type="button">Menu ▾</button>
+            <div class="dropdown-content">
+                <a href="menu.html">À la carte</a>
+                <a href="3course.html">3-course</a>
+                <a href="tasting.html">Tasting</a>
+            </div>
+        </div>
+
+        <a href="#">Events</a>
+        <a href="#contact">Contact</a>
+
+        <div class="dropdown">
+            <button class="dropbtn" type="button">More ▾</button>
+            <div class="dropdown-content">
+                <a href="#">Apply for a job!</a>
+                <a href="#">Press</a>
+            </div>
+        </div>
+
+        <a href="https://kiinkiingifts.dk/kiin/" target="_blank" rel="noopener noreferrer" class="btn-outline">Buy A Gift Card</a>
+        <a href="https://book.easytable.com/book/?id=2a075" target="_blank" rel="noopener noreferrer" class="btn">Reservation</a>
+        <a href="https://eat.kiinbao.dk/" target="_blank" rel="noopener noreferrer" class="btn">Takeaway</a>
+
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-text">
+        <p class="sub">COPENHAGEN · EST. 2018</p>
+        <h1>Our baos are made fresh <span>everyday</span></h1>
+        <p>Modern Asian Tapas Restaurant.</p>
+
+        <div class="hero-buttons">
+            <a href="https://book.easytable.com/book/?id=2a075" target="_blank" rel="noopener noreferrer" class="btn-dark">Book a Table</a>
+            <a href="https://eat.kiinbao.dk/" target="_blank" rel="noopener noreferrer" class="btn">Takeaway</a>
+        </div>
+    </div>
+
+    <div class="hero-image">
+        <img id="hero-img" src="images/pork-bao.jpg" alt="Food">
+    </div>
+</section>
+
+<!-- BEST SELLERS -->
+<section>
+    <h2>Best Sellers</h2>
+
+    <div class="grid">
+
+        <div class="card" data-title="Gyoza Dumplings" data-desc="Fried Dumplings with chicken and kimchi filling served with black vinegar and laoganma chili crisps." data-img="images/gyoza.jpg">
+            <img src="images/gyoza.jpg" alt="Homemade Fried Gyoza">
+            <h3>Homemade Fried Gyoza</h3>
+            <span>75 kr</span>
+        </div>
+
+        <div class="card" data-title="Thai Mango Salad" data-desc="Fresh mango salad with cucumber, carrots, lettuce dressed with homemade yum sauce, basil mayo, crushed cashew, orange slices and watercress." data-img="images/mango-salad.jpg">
+            <img src="images/mango-salad.jpg" alt="Thai Mango Salad">
+            <h3>Thai Mango Salad</h3>
+            <span>85 kr</span>
+        </div>
+
+        <div class="card" data-title="Fried Chicken Bao" data-desc="Soft steamed bao with fried chicken, chili mayo and carrot and cabbage pickle." data-img="images/chicken-bao.jpg">
+            <img src="images/chicken-bao.jpg" alt="Fried Chicken Bao">
+            <h3>Fried Chicken Bao</h3>
+            <span>70 kr</span>
+        </div>
+
+        <div class="card" data-title="Classic Braised Pork Bao" data-desc="Soft steamed bao with braised pork, goma mayo, crushed peanuts, spring onion, red onion, coriander and chili." data-img="images/pork-bao.jpg">
+            <img src="images/pork-bao.jpg" alt="Classic Braised Pork Bao">
+            <h3>Classic Braised Pork Bao</h3>
+            <span>70 kr</span>
+        </div>
+
+        <div class="card" data-title="Kiin Kiin Red Curry" data-desc="Red curry with kiin kiin thai spices, coconut milk, fish sauce and sweetened with condensed milk." data-img="images/red-curry.jpg">
+            <img src="images/red-curry.jpg" alt="Kiin Kiin Red Curry">
+            <h3>Kiin Kiin Red Curry</h3>
+            <span>150 kr</span>
+        </div>
+
+        <div class="card" data-title="Korean Galbi Ribs" data-desc="Korean style short ribs, slow cooked and grilled with homemade savory sauce, served with rice and homemade kimchi." data-img="images/galby-ribs.jpg">
+            <img src="images/galby-ribs.jpg" alt="Korean Galbi Ribs">
+            <h3>Korean Galbi Ribs</h3>
+            <span>180 kr</span>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-form">
+    <h2>Write us something!</h2>
+    <form>
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <input type="tel" placeholder="Phone">
+        <textarea placeholder="Message"></textarea>
+        <button class="btn" type="submit">GO!</button>
+    </form>
+</section>
+
+<!-- FOOTER -->
+<div class="bottom-section">
+
+    <div class="other-restaurants-block">
+        <h3>Visit our other restaurants</h3>
+
+        <div class="restaurants-list">
+            <a href="https://aroii.dk/" target="_blank" rel="noopener noreferrer">Aroii</a>
+            <a href="https://www.aroiidee.dk/" target="_blank" rel="noopener noreferrer">Aroiidee</a>
+            <a href="https://www.kiin.dk/" target="_blank" rel="noopener noreferrer">Kiin Kiin</a>
+            <a href="https://kiinkiintogo.dk/" target="_blank" rel="noopener noreferrer">Kiin Kiin To Go</a>
+            <a href="https://www.kiinkiinaar.dk/" target="_blank" rel="noopener noreferrer">Kiin Kiin Street Aarhus</a>
+            <a href="https://www.kempinski.com/en/siam-hotel/restaurants-bars/sra-bua-by-kiin-kiin" target="_blank" rel="noopener noreferrer">Sra Bua by Kiin Kiin</a>
+            <a href="https://www.kinikini.dk/" target="_blank" rel="noopener noreferrer">Kini Kini</a>
+            <a href="https://www.veve.dk/" target="_blank" rel="noopener noreferrer">VeVe</a>
+        </div>
+    </div>
+
+    <div class="find-us-block" id="contact">
+        
+        <h3>Contact</h3>
+        <p>Vesterbrogade 96</p>
+        <p>København V 1620</p>
+        <p>Monday-Sunday: 17.00-21.00</p><br>
+<p>Phone: +45 2154 5051</p>
+<p>We are open on Christmas and New Years Eve</p>
+
+        <div class="receipt-note">
+            *Any inquiries for a receipt/bill after a restaurant visit will be charged 250kr.
+            Hence please keep your receipt/bill safely before leaving the restaurant.
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="socials">
+            <a href="https://www.facebook.com/kiinkiinbaobao" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/kiinkiinbaobao/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+
+        <div class="footer-map">
+            <iframe src="https://www.google.com/maps?q=Vesterbrogade+96+Copenhagen&output=embed" title="Map"></iframe>
+        </div>
+    </div>
+
+</div>
+
+<!-- BADGE -->
+<img src="images/byensbedste.png" class="floating-badge" alt="Byens Bedste badge">
+
+<!-- FOOD MODAL -->
+<div id="food-modal" class="modal">
+    <div class="modal-content split">
+        <span class="close-btn">&times;</span>
+
+        <div class="modal-left">
+            <img id="modal-img" alt="Food item">
+        </div>
+
+        <div class="modal-right">
+            <h2 id="modal-title"></h2>
+            <p id="modal-desc"></p>
+        </div>
+    </div>
+</div>
+
+<!-- SCRIPT -->
+<script>
+/* HERO FADE */
+const heroItems = [
+    { img: "images/pork-bao.jpg", title: "Classic Braised Pork Bao", desc: "Soft steamed bao with braised pork, goma mayo, crushed peanuts, spring onion, red onion, coriander and chili." },
+    { img: "images/chicken-bao.jpg", title: "Fried Chicken Bao", desc: "Soft steamed bao with fried chicken, chili mayo and carrot and cabbage pickle." },
+    { img: "images/mango-salad.jpg", title: "Thai Mango Salad", desc: "Fresh mango salad with cucumber, carrots, lettuce dressed with homemade yum sauce, basil mayo, crushed cashew, orange slices and watercress." },
+    { img: "images/red-curry.jpg", title: "Kiin Kiin Red Curry", desc: "Red curry with kiin kiin thai spices, coconut milk, fish sauce and sweetened with condensed milk." }
+];
+
+let index = 0;
+const heroImg = document.getElementById("hero-img");
+
+function updateHero() {
+    const item = heroItems[index];
+
+    heroImg.classList.add("fade-out");
+
+    setTimeout(() => {
+        heroImg.src = item.img;
+        heroImg.dataset.title = item.title;
+        heroImg.dataset.desc = item.desc;
+        heroImg.dataset.img = item.img;
+        heroImg.classList.remove("fade-out");
+    }, 300);
+}
+
+updateHero();
+
+setInterval(() => {
+    index = (index + 1) % heroItems.length;
+    updateHero();
+}, 5000);
+
+/* FOOD MODAL */
+const modal = document.getElementById("food-modal");
+const modalImg = document.getElementById("modal-img");
+const modalTitle = document.getElementById("modal-title");
+const modalDesc = document.getElementById("modal-desc");
+
+document.querySelectorAll(".card").forEach(card => {
+    card.onclick = () => {
+        modal.style.display = "flex";
+        modalImg.src = card.dataset.img;
+        modalTitle.textContent = card.dataset.title;
+        modalDesc.textContent = card.dataset.desc;
+    };
+});
+
+heroImg.onclick = () => {
+    modal.style.display = "flex";
+    modalImg.src = heroImg.dataset.img;
+    modalTitle.textContent = heroImg.dataset.title;
+    modalDesc.textContent = heroImg.dataset.desc;
+};
+
+document.querySelector(".close-btn").onclick = () => {
+    modal.style.display = "none";
+};
+
+/* DROPDOWN DELAY */
+const dropdowns = document.querySelectorAll(".dropdown");
+
+dropdowns.forEach(dropdown => {
+    let timeout;
+
+    dropdown.addEventListener("mouseenter", () => {
+        clearTimeout(timeout);
+        dropdown.classList.add("active");
+    });
+
+    dropdown.addEventListener("mouseleave", () => {
+        timeout = setTimeout(() => {
+            dropdown.classList.remove("active");
+        }, 600);
+    });
+});
+
+/* CLICK OUTSIDE */
+window.addEventListener("click", (e) => {
+    if (e.target === modal) {
+        modal.style.display = "none";
+    }
+});
+</script>
+
+</body>
+</html>
