@@ -588,7 +588,7 @@ section h2 {
 @media (max-width: 768px) {
     /* NAVBAR */
     .navbar {
-        flex-direction: row !important;
+        flex-direction: column !important;
         justify-content: space-between !important;
         align-items: center !important;
         padding: 10px 16px !important;
