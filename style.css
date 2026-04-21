@@ -799,4 +799,26 @@ section h2 {
     }
 }
 
+@media (max-width: 768px) {
+
+    .menu-bg::before {
+        background-position: center center !important;
+        background-size: cover !important;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .other-restaurants-block {
+        text-align: center;
+        width: 100%;
+    }
+
+    .restaurants-list {
+        align-items: center;
+    }
+
+}
+
 }
