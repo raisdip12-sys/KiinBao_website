@@ -11,6 +11,10 @@
 }
 
 /* BASE */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     color: #f5f5f5;
@@ -23,7 +27,7 @@ body::before {
     content: "";
     position: fixed;
     inset: 0;
-    background: url("images/background.png") no-repeat left center/cover;
+    background: url("images/background.png") no-repeat center center / cover;
     z-index: -2;
 }
 
@@ -31,7 +35,7 @@ body::after {
     content: "";
     position: fixed;
     inset: 0;
-    background: radial-gradient(circle at center, rgba(0,0,0,0.2) 40%, rgba(0,0,0,0.95) 85%);
+    background: radial-gradient(circle at center, rgba(0,0,0,0.35) 40%, rgba(0,0,0,0.88) 85%);
     z-index: -1;
 }
 
@@ -60,19 +64,16 @@ body::after {
 
 .nav-links a,
 .dropbtn {
-    color: #fff;
+    color: #f0f0f0;
     font-size: 14px;
     text-decoration: none;
-    transition: 0.3s;
+    transition: color 0.3s;
     font-family: 'Inter', sans-serif;
 }
 
 .nav-links a:hover,
 .dropbtn:hover {
     color: var(--gold);
-}
-html {
-    scroll-behavior: smooth;
 }
 
 /* DROPDOWN */
@@ -90,7 +91,7 @@ html {
 .dropdown-content {
     position: absolute;
     top: 30px;
-    left: 0;
+    left: 8px;
     min-width: 170px;
     background: #111;
     border: 1px solid var(--border);
@@ -99,7 +100,7 @@ html {
     opacity: 0;
     visibility: hidden;
     transform: translateY(10px);
-    transition: 0.3s;
+    transition: opacity 0.3s, transform 0.3s, visibility 0.3s;
     z-index: 1100;
 }
 
@@ -113,8 +114,9 @@ html {
 .dropdown-content a {
     display: block;
     padding: 10px 14px;
-    color: #fff;
+    color: #f0f0f0;
     text-decoration: none;
+    transition: color 0.3s, background 0.3s;
 }
 
 .dropdown-content a:hover {
@@ -130,7 +132,7 @@ html {
     text-decoration: none;
     border-radius: 4px;
     padding: 10px 18px;
-    transition: 0.3s;
+    transition: all 0.3s;
 }
 
 .btn {
@@ -181,7 +183,7 @@ html {
 .sub {
     font-size: 12px;
     letter-spacing: 2px;
-    color: #aaa;
+    color: #ccc;
 }
 
 .hero h1 {
@@ -198,7 +200,7 @@ html {
 
 .hero p {
     margin: 20px 0;
-    color: #bbb;
+    color: #ddd;
 }
 
 .hero-buttons {
@@ -255,7 +257,7 @@ section h2 {
     border: 1px solid var(--border);
     padding: 15px;
     border-radius: 12px;
-    transition: 0.3s;
+    transition: border-color 0.3s, transform 0.3s;
     cursor: pointer;
 }
 
@@ -275,10 +277,11 @@ section h2 {
 .card h3 {
     margin-bottom: 8px;
     font-size: 18px;
+    color: #f0f0f0;
 }
 
 .card span {
-    color: var(--gold);
+    color: #d4aa6a;
 }
 
 /* CONTACT */
@@ -295,9 +298,16 @@ section h2 {
     padding: 12px;
     background: #111;
     border: 1px solid var(--border);
-    color: white;
+    color: #f0f0f0;
     border-radius: 6px;
     font-family: 'Inter', sans-serif;
+    transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--gold);
 }
 
 .contact-form textarea {
@@ -305,7 +315,7 @@ section h2 {
     resize: vertical;
 }
 
-/* FOOTER */
+/* FOOTER / BOTTOM SECTION */
 .bottom-section {
     display: flex;
     justify-content: space-between;
@@ -321,7 +331,6 @@ section h2 {
     font-family: 'Playfair Display', serif;
 }
 
-/* RESTAURANTS LIST */
 .restaurants-list {
     display: flex;
     flex-direction: column;
@@ -329,30 +338,28 @@ section h2 {
 }
 
 .restaurants-list a {
-    color: #ccc;
+    color: #e0e0e0;
     text-decoration: none;
-    transition: 0.3s;
+    transition: color 0.3s;
 }
 
 .restaurants-list a:hover {
     color: var(--gold);
 }
 
-/* FIND US */
 .find-us-block p {
     margin-bottom: 8px;
+    color: #e0e0e0;
 }
 
-/* RECEIPT NOTE */
 .receipt-note {
     margin-top: 50px;
     max-width: 280px;
     font-size: 13px;
-    color: #aaa;
+    color: #bbb;
     line-height: 1.6;
 }
 
-/* SOCIAL */
 .footer {
     display: flex;
     flex-direction: column;
@@ -368,7 +375,7 @@ section h2 {
 .socials a {
     color: var(--gold);
     font-size: 20px;
-    transition: 0.3s;
+    transition: transform 0.3s;
 }
 
 .socials a:hover {
@@ -406,27 +413,21 @@ section h2 {
     margin-bottom: 30px;
 }
 
-.menu-page h3 {
-    margin-top: 40px;
-    margin-bottom: 10px;
-    color: var(--gold);
-    font-family: 'Playfair Display', serif;
-}
-.menu-page h4 {
-    margin-top: 40px;
-    margin-bottom: 10px;
-    color: var(--gold);
-    font-family: 'Playfair Display', serif;
-}
+.menu-page h3,
+.menu-page h4,
 .menu-page h5 {
-    margin-top: 50px;
-    margin-bottom: 15px;
     color: var(--gold);
     font-family: 'Playfair Display', serif;
+    margin-bottom: 10px;
 }
+
+.menu-page h3 { margin-top: 40px; }
+.menu-page h4 { margin-top: 40px; }
+.menu-page h5 { margin-top: 50px; margin-bottom: 15px; }
+
 .menu-page p {
     margin-bottom: 8px;
-    color: #ccc;
+    color: #ddd;
     line-height: 1.6;
 }
 
@@ -444,7 +445,7 @@ section h2 {
     color: white;
     padding: 6px 10px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: border-color 0.3s, color 0.3s;
 }
 
 .lang-toggle button:hover {
@@ -471,7 +472,7 @@ section h2 {
 }
 
 .vegan-note p {
-    color: #ccc;
+    color: #ddd;
     font-size: 14px;
     margin-bottom: 8px;
 }
@@ -527,7 +528,7 @@ section h2 {
 }
 
 .modal-right p {
-    color: #ccc;
+    color: #e0e0e0;
     line-height: 1.7;
     font-size: 15px;
 }
@@ -540,101 +541,19 @@ section h2 {
     color: #fff;
     cursor: pointer;
     z-index: 10;
-    transition: 0.3s;
+    transition: color 0.3s;
 }
 
 .close-btn:hover {
     color: var(--gold);
 }
 
-/* RESPONSIVE */
-@media (max-width: 1100px) {
-    .hero h1 {
-        font-size: 64px;
-    }
-
-    .grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 900px) {
-    .navbar {
-        flex-direction: column;
-        gap: 20px;
-        padding: 20px;
-    }
-
-    .nav-links {
-        justify-content: center;
-    }
-
-    .hero {
-        flex-direction: column;
-        text-align: center;
-        padding: 100px 20px 60px;
-    }
-
-    .hero-text {
-        max-width: 100%;
-    }
-
-    .hero-buttons {
-        justify-content: center;
-    }
-
-    section {
-        padding: 60px 20px;
-    }
-
-    .grid {
-        grid-template-columns: 1fr;
-    }
-
-    .bottom-section {
-        flex-direction: column;
-        text-align: center;
-        padding: 60px 20px;
-    }
-
-    .footer {
-        align-items: center;
-    }
-
-    .menu-page {
-        padding: 80px 20px;
-    }
-
-    .modal-content.split {
-        grid-template-columns: 1fr;
-    }
-
-    .modal-left img {
-        min-height: 240px;
-    }
-
-    .modal-right {
-        padding: 25px 20px;
-    }
-
-    .lang-toggle {
-        top: auto;
-        bottom: 20px;
-        right: 20px;
-    }
-
-    .floating-badge {
-        width: 90px;
-        right: 15px;
-        bottom: 15px;
-    }
-}
-
+/* MENU BACKGROUND */
 .menu-bg::before {
     content: "";
     position: fixed;
     inset: 0;
-    background: url("images/menu.png") no-repeat left center/cover;
+    background: url("images/menu.png") no-repeat center center / cover;
     z-index: -2;
 }
 
@@ -646,23 +565,66 @@ section h2 {
     z-index: -1;
 }
 
-@media (max-width: 600px) {
+/* ─── RESPONSIVE ─────────────────────────────────────────── */
+
+@media (max-width: 1100px) {
     .hero h1 {
-        font-size: 42px;
+        font-size: 64px;
     }
 
-    section h2,
-    .menu-page h2 {
-        font-size: 34px;
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
     }
-    
+}
+
+@media (max-width: 1024px) {
+    .hero {
+        padding: 100px 40px;
+    }
+
+    section {
+        padding: 60px 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* NAVBAR — logo centered top, links row below */
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 14px 16px;
+        gap: 12px;
+    }
 
     .logo {
-        height: 58px;
+        height: 55px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        width: 100%;
+    }
+
+    .nav-links a,
+    .dropbtn {
+        font-size: 12px;
+    }
+
+    .btn,
+    .btn-outline,
+    .btn-dark {
+        padding: 6px 10px;
+        font-size: 11px;
     }
 
     .dropdown-content {
         left: 50%;
+        right: auto;
         transform: translateX(-50%) translateY(10px);
     }
 
@@ -671,13 +633,112 @@ section h2 {
         transform: translateX(-50%) translateY(0);
     }
 
-    @media (max-width: 768px) {
-
-    body::before {
-        background-position: center top;
-        background-size: cover;
+    /* HERO */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 80px 20px 40px;
     }
 
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+        line-height: 1.2;
+    }
+
+    .hero-image img {
+        width: 260px;
+        margin-top: 20px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    /* SECTIONS */
+    section {
+        padding: 50px 20px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* BOTTOM */
+    .bottom-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 60px 20px;
+        gap: 30px;
+    }
+
+    .restaurants-list {
+        align-items: center;
+    }
+
+    .footer {
+        align-items: center;
+    }
+
+    /* MENU PAGE */
+    .menu-page {
+        padding: 60px 20px;
+    }
+
+    /* MODAL */
+    .modal-content.split {
+        grid-template-columns: 1fr;
+    }
+
+    .modal-left img {
+        min-height: 220px;
+    }
+
+    .modal-right {
+        padding: 20px;
+    }
+
+    /* LANG TOGGLE */
+    .lang-toggle {
+        top: auto;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    /* BADGE */
+    .floating-badge {
+        width: 90px;
+        right: 15px;
+        bottom: 15px;
+    }
+
+    /* BACKGROUNDS */
+    body::before,
+    .menu-bg::before {
+        background-position: center center;
+        background-size: cover;
+    }
 }
 
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .logo {
+        height: 42px;
+    }
+
+    .hero-image img {
+        width: 200px;
+    }
+
+    section h2,
+    .menu-page h2 {
+        font-size: 34px;
+    }
 }
