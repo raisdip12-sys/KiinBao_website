@@ -42,18 +42,12 @@ This project demonstrates a clean user interface, interactive elements, and a mu
 
 ---
 
-## Live Demo
-
-(Add your GitHub Pages link here once deployed)
-
----
-
 ## Setup and Usage
 
 1. Clone the repository:
 
 ```
-git clone https://github.com/yourusername/restaurant-website.git
+git clone https://github.com/raisdip12-sys/KiinBao_website.git
 ```
 
 2. Open `index.html` in your browser.
