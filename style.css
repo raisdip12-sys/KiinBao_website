@@ -586,12 +586,14 @@ section h2 {
 }
 
 @media (max-width: 768px) {
-    
+    /* NAVBAR — logo left, links wrap right */
     .navbar {
-        flex-direction: center !important;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
         align-items: center;
-        padding: 20px 25px;
-        gap: 20px;
+        padding: 10px 16px;
+        gap: 8px;
     }
 
     .logo {
@@ -600,6 +602,7 @@ section h2 {
     }
 
     .nav-links {
+        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: flex-end;
