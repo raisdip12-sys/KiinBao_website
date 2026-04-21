@@ -830,7 +830,7 @@ section h2 {
 
     .bottom-section {
         display: flex !important;
-        flex-direction: column !important;
+        flex-direction: row !important;
         align-items: center !important;
         text-align: center !important;
         gap: 40px;
@@ -849,7 +849,8 @@ section h2 {
     }
 
 }
-    @media (max-width: 768px) {
+
+@media (max-width: 768px) {
 
     .navbar {
         display: flex;
@@ -875,6 +876,42 @@ section h2 {
         max-width: 150px;
     }
 
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: row !important;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 15px;
+    }
+
+    .logo {
+        height: 55px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row !important;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 8px;
+    }
+
+    .nav-links a,
+    .dropbtn {
+        font-size: 12px;
+    }
+
+    .btn,
+    .btn-outline,
+    .btn-dark {
+        padding: 6px 10px;
+        font-size: 11px;
+    }
+
 }
+}
+
+
 
 }
