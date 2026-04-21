@@ -849,5 +849,32 @@ section h2 {
     }
 
 }
+    @media (max-width: 768px) {
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    /* Force buttons to next row */
+    .nav-links a.btn,
+    .nav-links a.btn-outline,
+    .nav-links a.btn-dark {
+        flex: 1 1 100%;
+        text-align: center;
+        max-width: 150px;
+    }
+
+}
 
 }
