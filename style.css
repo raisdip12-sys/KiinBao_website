@@ -798,9 +798,9 @@ section h2 {
         font-size: 13px;
     }
 }
-
 @media (max-width: 768px) {
 
+    body::before,
     .menu-bg::before {
         background-position: center center !important;
         background-size: cover !important;
