@@ -588,10 +588,10 @@ section h2 {
 @media (max-width: 768px) {
     
     .navbar {
-        flex-direction: column;
+        flex-direction: center !important;
         align-items: center;
-        padding: 15px 20px;
-        gap: 15px;
+        padding: 20px 25px;
+        gap: 20px;
     }
 
     .logo {
