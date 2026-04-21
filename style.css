@@ -586,13 +586,13 @@ section h2 {
 }
 
 @media (max-width: 768px) {
-    /* NAVBAR — compact horizontal row */
+    /* NAVBAR */
     .navbar {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 16px;
-        gap: 10px;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        padding: 10px 16px !important;
+        gap: 10px !important;
     }
 
     .logo {
