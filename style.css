@@ -352,6 +352,7 @@ section h2 {
     color: #e0e0e0;
 }
 
+
 .receipt-note {
     margin-top: 50px;
     max-width: 280px;
@@ -368,7 +369,9 @@ section h2 {
 }
 
 .socials {
+    color: #d4aa6a;
     display: flex;
+    font-family: 'Playfair Display', serif;
     gap: 20px;
 }
 
