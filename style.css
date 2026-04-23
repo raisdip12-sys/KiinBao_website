@@ -751,14 +751,6 @@ section h2 {
     max-width: 1100px;
 }
 
-@media (max-width: 768px) {
-    img[onclick="openPromo()"] {
-        height: 25vh;
-        bottom: 0px;
-        transform: translateX(30%) rotate(-10deg);
-    }
-}
-
     section h2,
     .menu-page h2 {
         font-size: 34px;
