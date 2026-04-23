@@ -651,15 +651,21 @@ section h2 {
         font-size: 38px;
         line-height: 1.2;
     }
-
-    .hero-image img {
-        width: 260px;
-        margin-top: 20px;
-    }
+  
 
     .hero-buttons {
-        justify-content: center;
-    }
+    gap: 10px;
+}
+
+.hero-buttons a {
+    padding: 8px 14px;
+    font-size: 13px;
+}
+
+.hero-image img {
+    width: 360px;
+    max-width: 100%;
+}
 
     /* SECTIONS */
     section {
