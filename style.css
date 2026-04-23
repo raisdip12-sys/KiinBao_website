@@ -753,8 +753,8 @@ section h2 {
 
 @media (max-width: 768px) {
     img[onclick="openPromo()"] {
-        height: 35vh;
-        bottom: 5px;
+        height: 25vh;
+        bottom: 0px;
         transform: translateX(30%) rotate(-10deg);
     }
 }
