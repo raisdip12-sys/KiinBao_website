@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>3 Course Menu</title>
+<title>Drinks</title>
 <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body class="menu-bg">
@@ -35,31 +36,86 @@
 
 <section class="menu-page">
 
-<h2>3-COURSE MENU (350kr Per Person)</h2>
+    
 
-<p>1 Drink Each and a Jug of Water Included.
+<h2>Cheers!</h2>
 
-</p>
 
-<h3>First serving</h3>
+
+<h3>Cocktails</h3>
 <p>1. Homemade Gyoza Dumplings <br> OR <br>6. Thai mango salad</p>
 
-<h3>Second serving</h3>
+<h3>Mocktails</h3>
+
 <p>Choose your own bao (1 Per Person) : <br>1. Braised pork  <br>2. Fried Chicken <br>3. Pulled Beef <br>4. Portobello panko  <br>5. Softshell crab <br>6. Prawn tempura <br>7. Black pepper chicken</p>
 
-<h3>Third serving</h3>
+<h3>Wine</h3>
 <p>Kiin Kiin red curry with jasmin rice</p>
 
-<h3>Sweet ending</h3>
+<h3></h3>
 <p>Homemade Mungbean ice cream on dried coconut and drizzled with caramel sauce and oreo crumbs (+60kr)</p>
 
 <div class="vegan-note">
-    <h3>Vegan Options</h3>
+    <h3>Promotions</h3>
     <p>We also serve vegan options and lactose free bao.</p>
     <p>Please ask our staff about vegan options and allergies.</p>
 </div>
 
 </section>
+
+<img src="drinksimg/promo.png"
+onclick="openPromo()"
+style="
+position: fixed;
+right: 0;
+bottom: -40px;
+height: 80vh;
+transform: translateX(45%) rotate(-12deg);
+z-index: 9999;
+cursor: pointer;
+">
+
+<div id="promoModal" style="
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.8);
+justify-content:center;
+align-items:center;
+z-index:10000;
+">
+
+    <img src="drinksimg/promo.png" style="
+    max-width:90%;
+    max-height:90%;
+    border-radius:10px;
+    ">
+
+    <span onclick="closePromo()" style="
+    position:absolute;
+    top:20px;
+    right:30px;
+    font-size:30px;
+    color:white;
+    cursor:pointer;
+    ">&times;</span>
+
+
+
+</div>
+
+<script>
+function openPromo() {
+    document.getElementById("promoModal").style.display = "flex";
+}
+
+function closePromo() {
+    document.getElementById("promoModal").style.display = "none";
+}
+</script>
 
 </body>
 </html>
