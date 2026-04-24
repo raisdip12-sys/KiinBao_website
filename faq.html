@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FAQ - Kiin Bao</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="faq-bg">
+
+<!-- TOP NAV -->
+<div class="faq-top">
+    <a href="index.html" class="btn-outline">Home</a>
+    <a href="index.html#contact" class="btn">Contact</a>
+</div>
+
+<!-- LEFT DARK OVERLAY -->
+<div class="faq-overlay"></div>
+
+<!-- MAIN SECTION -->
+<section class="faq-hero">
+
+    <div class="faq-left">
+
+        <h1>Frequently Asked <span>Questions</span></h1>
+
+        <p>Find answers to common questions about our food and services.</p>
+
+        <!-- SEARCH -->
+        <input type="text" id="faqSearch" class="faq-search" placeholder="Search for questions...">
+
+        <!-- FAQ ITEMS -->
+        <div class="faq-item">
+            <div class="faq-question">Do you offer vegan options?</div>
+            <div class="faq-answer">Yes, we offer a variety of vegan and vegetarian dishes.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Are the chicken and beef halal?</div>
+            <div class="faq-answer">Yes, The chicken and beef used in our dishes are halal.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">When does the kitchen closes?</div>
+            <div class="faq-answer">Our kitchen closes at 9 every night.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Are the bao gluten free?</div>
+            <div class="faq-answer">No but we do serve lactose free bao for vegan customers.</div>
+        
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Is the kiin kiin red curry vegan?</div>
+            <div class="faq-answer">No because the red curry is prepared with fish sauce which is suitable for vegetarians and pesketaryen</div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SCRIPT -->
+<script>
+const search = document.getElementById("faqSearch");
+const items = document.querySelectorAll(".faq-item");
+
+search.addEventListener("keyup", function () {
+    let value = this.value.toLowerCase();
+
+    items.forEach(item => {
+        let text = item.innerText.toLowerCase();
+        item.style.display = text.includes(value) ? "block" : "none";
+    });
+});
+
+document.querySelectorAll(".faq-question").forEach(q => {
+    q.addEventListener("click", () => {
+        q.nextElementSibling.classList.toggle("active");
+    });
+});
+</script>
+
+</body>
+</html>
