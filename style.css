@@ -1334,6 +1334,11 @@ section h2 {
 
 @media (max-width: 768px) {
 
+    .about-bg::before {
+        background-position: center center !important;
+        background-size: cover !important;
+    }
+
     .about-overlay {
         width: 100%;
         background: rgba(0,0,0,0.78);
@@ -1372,7 +1377,7 @@ section h2 {
 
     .about-section {
         padding: 50px 20px;
-        gap: 40px;
+        gap: 50px;
     }
 
     .about-block,
@@ -1383,7 +1388,7 @@ section h2 {
 
     .about-block img {
         width: 100%;
-        height: 220px;
+        height: 230px;
     }
 
     .about-text {
@@ -1393,6 +1398,10 @@ section h2 {
 
     .about-text h3 {
         font-size: 24px;
+    }
+
+    .about-text p {
+        font-size: 14px;
     }
 
     .brand-showcase {
@@ -1406,6 +1415,18 @@ section h2 {
     .brand-grid {
         grid-template-columns: 1fr;
         gap: 20px;
+    }
+
+    .brand-card {
+        padding: 20px;
+    }
+
+    .brand-card img {
+        height: 60px;
+    }
+
+    .brand-card p {
+        font-size: 14px;
     }
 
     .owners-section {
@@ -1433,6 +1454,7 @@ section h2 {
     .owner-card p {
         font-size: 14px;
     }
+
 }
 
 .page-topbar {
