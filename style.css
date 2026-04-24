@@ -417,9 +417,7 @@ section h2 {
     margin-bottom: 30px;
 }
 
-.menu-page h3,
-.menu-page h4,
-.menu-page h5 {
+.menu-page h3 {
     color: var(--gold);
     font-family: 'Playfair Display', serif;
     margin-bottom: 10px;
@@ -739,6 +737,128 @@ section h2 {
     max-width: 1100px;
 }
 
+.footer-clean {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px 30px;
+    margin-bottom: 25px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: var(--gold);
+}
+
+.footer-links a::after {
+    content: "•";
+    margin-left: 20px;
+    color: #555;
+}
+
+.footer-links a:last-child::after {
+    content: "";
+}
+
+.footer-social {
+    text-align: center;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+@media (max-width: 768px) {
+
+    .footer-clean {
+        padding: 35px 15px;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px 14px;
+        max-width: 280px;
+        margin: 0 auto 20px;
+    }
+
+    .footer-links a {
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+    .footer-links a::after {
+        content: "•";
+        margin-left: 8px;
+        color: #555;
+    }
+
+    .footer-links a:last-child::after {
+        content: "";
+    }
+
+    .footer-social {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .socials {
+        justify-content: center;
+        gap: 12px;
+    }
+
+}
+@media (max-width: 768px) {
+
+    .vegan-note {
+        text-align: center;
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .vegan-note p {
+        text-align: center;
+    }
+
+}
+
+.vegan-note {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.menu-page ul {
+    max-width: 700px;
+    margin: 10px 0 20px;
+    padding-left: 20px;
+    color: #ccc;
+    line-height: 1.7;
+}
+
+.menu-page li {
+    margin-bottom: 6px;
+}
+
+.menu-page p {
+    max-width: 700px;
+}
     section h2,
     .menu-page h2 {
         font-size: 34px;
