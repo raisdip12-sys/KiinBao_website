@@ -1030,7 +1030,6 @@ section h2 {
 
 }
 
-/* ABOUT BACKGROUND */
 .about-bg::before {
     content: "";
     position: fixed;
@@ -1047,7 +1046,6 @@ section h2 {
     z-index: -1;
 }
 
-/* LEFT OVERLAY */
 .about-overlay {
     position: fixed;
     top: 0;
@@ -1058,74 +1056,30 @@ section h2 {
     z-index: -1;
 }
 
-/* LAYOUT */
+.page-topbar {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    right: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.page-logo {
+    height: 70px;
+    width: auto;
+}
+
 .about-hero {
     display: flex;
     padding: 180px 100px 60px;
 }
 
-/* TEXT */
-.about-left {
-     max-width: 650px;
-    margin-top: 60px;
-}
-
-.about-left h1 {
-    font-size: 70px;
-    font-family: 'Playfair Display', serif;
-}
-
-.about-left span {
-    color: var(--gold);
-}
-
-.about-left p {
-    margin-top: 20px;
-    color: #ccc;
-    line-height: 1.7;
-}
-
-.about-bg::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    background: url("images/background.png") no-repeat center/cover;
-    z-index: -2;
-}
-
-.about-bg::after {
-    content: "";
-    position: fixed;
-    inset: 0;
-    background: radial-gradient(circle at center, rgba(0,0,0,0.2) 30%, rgba(0,0,0,0.9) 90%);
-    z-index: -1;
-}
-
-.about-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 55%;
-    height: 100%;
-    background: linear-gradient(to right, rgba(0,0,0,0.95), rgba(0,0,0,0.7), transparent);
-    z-index: -1;
-}
-
-.faq-top {
-    position: absolute;
-    top: 20px;
-    left: 30px;
-    display: flex;
-    gap: 15px;
-}
-
-.about-hero {
-    display: flex;
-    padding: 120px 100px 60px;
-}
-
 .about-left {
     max-width: 650px;
+    margin-top: 40px;
 }
 
 .about-left h1 {
@@ -1181,7 +1135,6 @@ section h2 {
     font-size: 30px;
     font-family: 'Playfair Display', serif;
     margin-bottom: 15px;
-    color: #c9a45c;
 }
 
 .about-text p {
@@ -1229,59 +1182,6 @@ section h2 {
     color: #ccc;
     line-height: 1.6;
     font-size: 14px;
-}
-
-@media (max-width: 768px) {
-    .about-overlay {
-        width: 100%;
-    }
-
-    .faq-top {
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .about-hero {
-        display: block;
-        padding: 90px 20px 40px;
-        text-align: center;
-    }
-
-    .about-left h1 {
-        font-size: 40px;
-    }
-
-    .about-section {
-        padding: 50px 20px;
-        gap: 40px;
-    }
-
-    .about-block,
-    .about-block.reverse {
-        flex-direction: column;
-    }
-
-    .about-block img {
-        width: 100%;
-        height: 220px;
-    }
-
-    .about-text {
-        width: 100%;
-        text-align: center;
-    }
-
-    .brand-showcase {
-        padding: 50px 20px;
-    }
-
-    .brand-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .brand-showcase h2 {
-        font-size: 30px;
-    }
 }
 
 .owners-section {
@@ -1333,7 +1233,6 @@ section h2 {
 }
 
 @media (max-width: 768px) {
-
     .about-bg::before {
         background-position: center center !important;
         background-size: cover !important;
@@ -1454,8 +1353,10 @@ section h2 {
     .owner-card p {
         font-size: 14px;
     }
-
 }
+
+
+
 
 .page-topbar {
     position: absolute;
