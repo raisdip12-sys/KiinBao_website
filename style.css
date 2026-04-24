@@ -1261,9 +1261,12 @@ section h2 {
 
     .about-hero {
         display: block;
-        padding: 130px 20px 50px;
+        padding: 170px 20px 50px;
         text-align: center;
     }
+    .about-section {
+    margin-top: 20px;
+}
 
     .about-left {
         max-width: 100%;
@@ -1303,6 +1306,7 @@ section h2 {
 
     .about-text h3 {
         font-size: 24px;
+        color:#c9a45c;
     }
 
     .about-text p {
