@@ -1010,15 +1010,6 @@ section h2 {
         font-size: 13px;
     }
 
-    /* Top buttons */
-    .faq-top {
-        position: absolute;
-        top: 15px;
-        left: 50%;
-        transform: translateX(-50%);
-        gap: 10px;
-    }
-
 }
 @media (max-width: 768px) {
 
