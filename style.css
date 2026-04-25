@@ -1430,7 +1430,73 @@ section h2 {
     color: #ccc;
     line-height: 1.7;
 }
+@media screen and (max-width: 768px) {
 
+    .jobs-bg::before {
+        background-position: center center !important;
+        background-size: cover !important;
+    }
+
+    .jobs-overlay {
+        width: 100% !important;
+        background: rgba(0,0,0,0.78) !important;
+    }
+
+    .page-topbar {
+        top: 15px !important;
+        left: 20px !important;
+        right: 20px !important;
+    }
+
+    .page-logo {
+        height: 50px !important;
+    }
+
+    .jobs-hero {
+        padding: 140px 20px 50px !important;
+        text-align: center !important;
+        display: block !important;
+    }
+
+    .jobs-left {
+        max-width: 100% !important;
+        margin: 0 auto !important;
+    }
+
+    .jobs-left h1 {
+        font-size: 38px !important;
+        line-height: 1.2 !important;
+    }
+
+    .jobs-left p {
+        font-size: 14px !important;
+        line-height: 1.7 !important;
+    }
+
+    .jobs-left a.btn {
+        margin-top: 25px !important;
+        display: inline-block !important;
+    }
+
+    .job-listings {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+        padding: 0 20px 60px !important;
+    }
+
+    .job-card {
+        padding: 20px !important;
+    }
+
+    .job-card h3 {
+        font-size: 20px !important;
+    }
+
+    .job-card p {
+        font-size: 14px !important;
+    }
+
+}
 .events-bg::before {
     content: "";
     position: fixed;
