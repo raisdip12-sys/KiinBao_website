@@ -1590,80 +1590,74 @@ section h2 {
     gap: 30px;
 }
 
-
 @media (max-width: 768px) {
 
+    .events-bg::before {
+        background-position: center center !important;
+        background-size: cover !important;
+    }
+
     .events-overlay {
-        width: 100%;
-        background: rgba(0,0,0,0.78);
+        width: 100% !important;
+        background: rgba(0,0,0,0.78) !important;
     }
 
     .events-feature {
-        min-height: auto;
-        padding: 130px 20px 60px;
-        align-items: flex-start;
+        min-height: auto !important;
+        padding: 140px 20px 60px !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: flex-start !important;
     }
 
     .events-feature-card {
-        padding: 30px 20px;
-        border-radius: 16px;
+        width: 100% !important;
+        padding: 30px 20px !important;
+        border-radius: 16px !important;
     }
 
     .events-feature-card h2 {
-        font-size: 30px;
-        line-height: 1.2;
+        font-size: 30px !important;
+        line-height: 1.2 !important;
     }
 
     .events-subtitle {
-        font-size: 15px;
-        margin-bottom: 20px;
+        font-size: 15px !important;
     }
 
     .events-feature-card p {
-        font-size: 14px;
-        line-height: 1.7;
+        font-size: 14px !important;
+        line-height: 1.7 !important;
     }
 
     .events-highlights {
-        grid-template-columns: 1fr;
-        gap: 15px;
-        margin: 30px 0;
+        grid-template-columns: 1fr !important;
+        gap: 15px !important;
+        margin: 30px 0 !important;
     }
 
     .highlight-box {
-        padding: 18px;
+        padding: 18px !important;
     }
 
     .highlight-box h3 {
-        font-size: 20px;
+        font-size: 20px !important;
     }
 
     .highlight-box p {
-        font-size: 13px;
+        font-size: 13px !important;
     }
 
     .events-cta-group {
-        gap: 20px;
-        margin-top: 10px;
+        gap: 20px !important;
     }
 
     .catering-contact {
-        font-size: 18px;
-        text-align: center;
-        line-height: 1.4;
+        font-size: 18px !important;
+        text-align: center !important;
     }
 
 }
-
-.catering-contact a {
-    color: var(--gold);
-    text-decoration: none;
-}
-
-.catering-contact a:hover {
-    text-decoration: underline;
-}
-
 
 
 .page-topbar {
