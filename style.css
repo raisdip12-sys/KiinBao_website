@@ -1707,10 +1707,26 @@ section h2 {
 }
 
 .catering-contact {
-    margin-top: 80px;
     font-size: 24px;
     font-family: 'Playfair Display', serif;
     color: #fff;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.catering-contact a {
+    color: var(--gold);
+    text-decoration: none;
+}
+
+.catering-contact a:hover {
+    text-decoration: underline;
+}
+.events-feature-card .catering-contact {
+    font-size: 24px;
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+    text-align: center;
 }
 
 .events-cta-group {
