@@ -1590,7 +1590,7 @@ section h2 {
     gap: 30px;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
     .events-bg::before {
         background-position: center center !important;
@@ -1602,35 +1602,48 @@ section h2 {
         background: rgba(0,0,0,0.78) !important;
     }
 
+    .page-topbar {
+        top: 15px !important;
+        left: 20px !important;
+        right: 20px !important;
+    }
+
+    .page-logo {
+        height: 50px !important;
+    }
+
     .events-feature {
-        min-height: auto !important;
         padding: 140px 20px 60px !important;
-        display: flex !important;
-        justify-content: center !important;
-        align-items: flex-start !important;
+        min-height: auto !important;
+        display: block !important;
     }
 
     .events-feature-card {
         width: 100% !important;
+        max-width: 100% !important;
         padding: 30px 20px !important;
-        border-radius: 16px !important;
+        margin: 0 auto !important;
     }
 
     .events-feature-card h2 {
-        font-size: 30px !important;
+        font-size: 32px !important;
         line-height: 1.2 !important;
+        text-align: center !important;
     }
 
     .events-subtitle {
         font-size: 15px !important;
+        text-align: center !important;
     }
 
     .events-feature-card p {
         font-size: 14px !important;
         line-height: 1.7 !important;
+        text-align: center !important;
     }
 
     .events-highlights {
+        display: grid !important;
         grid-template-columns: 1fr !important;
         gap: 15px !important;
         margin: 30px 0 !important;
@@ -1649,12 +1662,16 @@ section h2 {
     }
 
     .events-cta-group {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
         gap: 20px !important;
     }
 
     .catering-contact {
         font-size: 18px !important;
         text-align: center !important;
+        line-height: 1.4 !important;
     }
 
 }
